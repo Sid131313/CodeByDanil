@@ -1,0 +1,35 @@
+/*Basic style*/
+
+body {
+  font-family: "Michroma", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 24px;
+  
+}
+
+
+.container {
+  @include min-max(320px, 100%);
+
+}
+
+.wrap {
+@include min-max(320px, 80%);
+ margin: 0 auto;
+}
+
+p,
+a,
+button {
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
