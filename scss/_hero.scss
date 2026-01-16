@@ -138,3 +138,167 @@
   }
   }
 }
+.algorithm{
+  max-width: 80%;
+  margin: 0 auto;
+
+  h2{
+    margin-top: 5vh;
+    font-size: 3vw;
+    letter-spacing: 3px;
+    margin-bottom: 10vh;
+  }
+  &-list{
+    display: flex;
+    gap: 30px;
+    margin-top: 3vh;
+    img{
+      margin-top: 5px;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+  &-text{
+    margin-bottom: 5vh;
+    h3{
+    font-size: 2vw;
+    }
+    p{
+      margin-top: 3vh;
+      color: #3f3f3f;
+    }
+  }
+}
+.faq {
+  padding: 80px 20px;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.faq__container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.faq__title {
+  font-size: 3vw;
+  text-align: left;
+  margin-bottom: 10vh;
+}
+
+.faq__item {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2vw;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq__icon {
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.faq__item.active .faq__icon {
+  transform: rotate(45deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq__answer p {
+  padding: 0 0 20px;
+  color: #3f3f3f;
+  line-height: 1.6;
+}
+.feedback {
+  padding: 80px 20px;
+  color: #000000;
+}
+
+.feedback__container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.feedback__info {
+  flex: 1;
+}
+
+.feedback__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feedback__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3f3f3f;
+}
+
+.feedback__link {
+
+  text-decoration: underline;
+}
+
+.feedback__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback__input {
+  padding: 14px 16px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #3f3f3f;
+  font-size: 16px;
+}
+
+.feedback__input::placeholder {
+  color: #3f3f3f;
+}
+
+.feedback__checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #bbbbbb;
+  align-items: flex-start;
+}
+
+.feedback__checkbox input {
+  margin-top: 4px;
+}
+
+.feedback__button {
+  padding: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.feedback__button:hover {
+  opacity: 0.8;
+}
+
