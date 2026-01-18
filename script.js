@@ -19,3 +19,20 @@ const faqItems = document.querySelectorAll('.faq__item');
     });
   });
 
+  const hero = document.querySelector('.hero');
+
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    hero.style.setProperty('--x', `${x}px`);
+    hero.style.setProperty('--y', `${y}px`);
+  });
+
+  hero.addEventListener('mouseleave', () => {
+    hero.style.setProperty('--x', `50%`);
+    hero.style.setProperty('--y', `50%`);
+  });
+
+

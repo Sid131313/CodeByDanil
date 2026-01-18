@@ -136,6 +136,29 @@ img {
   font-size: 20px;
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* слой реакции на курсор */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(300px circle at var(--x, 50%) var(--y, 50%), rgba(180, 180, 180, 0.25), rgba(0, 0, 0, 0.95) 60%);
+  pointer-events: none;
+  transition: background 0.1s linear;
+  z-index: 1;
+}
+
+/* контент поверх */
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
 .cl-t {
   color: #bababa;
   -webkit-text-size-adjust: 100%;
@@ -408,3 +431,79 @@ img {
 .feedback__button:hover {
   opacity: 0.8;
 }
+
+.footer {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.footer__logo h2 {
+  font-size: 3vw;
+  letter-spacing: 3px;
+  margin-bottom: 10vh;
+}
+.footer__logo p {
+  margin-top: 3vh;
+}
+.footer__logo a {
+  margin-top: 3vh;
+  font-size: 1vw;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer__logo a.politic:hover {
+  color: rgb(61, 61, 61);
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__info a {
+  font-size: 1vw;
+  text-decoration: none;
+  transition: -webkit-text-decoration 0.5s ease;
+  transition: text-decoration 0.5s ease;
+  transition: text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease;
+}
+.footer__info a:hover {
+  text-decoration: underline;
+}
+
+.footer__connect {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-btn {
+  border: 1px solid #000;
+  color: #000000;
+  display: flex;
+  gap: 10px;
+  margin: 2vh 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+.footer__social-btn:hover {
+  text-decoration: underline;
+}
+
+.footer__social-img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__social-max {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
